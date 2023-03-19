@@ -17,5 +17,5 @@ const reft = {
 reft.inputEl.addEventListener("input", handleControlInput);
 
 function handleControlInput() {
-    spanText.style.fontSize = `${inputEl.value}px`;
+    reft.spanText.style.fontSize = `${reft.inputEl.value}px`;
 }
