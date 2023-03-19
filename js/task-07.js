@@ -9,14 +9,13 @@
 */
 
 const reft = {
-    input: document.querySelector("#font-size-control"),
+    inputEl: document.querySelector("#font-size-control"),
     spanText: document.querySelector("#text"),
 
 }
 
-reft.input.addEventListener("input", handleControlInput);
+reft.inputEl.addEventListener("input", handleControlInput);
 
-function handleControlInput(event) {
-    spanText.style.fontSize = event.currentTarget.value + "px";
-
+function handleControlInput() {
+    spanText.style.fontSize = `${inputEl.value}px`;
 }
